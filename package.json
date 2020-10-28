@@ -1,0 +1,11 @@
+{
+  "name": "minari",
+  "version": "1.0.0",
+  "description": "Um bot simples para o discord.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elon Musky <rangeltauan@gmail.com>",
+  "license": "MIT"
+}
