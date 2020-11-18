@@ -2,8 +2,8 @@ const { Command } = require('discord-akairo');
 
 class PokemonCommand extends Command {
     constructor() {
-        super('pokemon', {
-            aliases: ['pokemon'],
+        super('add', {
+            aliases: ['add'],
             args: [
                 {
                     id: 'option',
@@ -19,7 +19,12 @@ class PokemonCommand extends Command {
     }
 
     exec(message, args) {
-        if (args.option === 'karina') return message.reply('bulbasaur');
+        let karina = message.guild.roles.get("778586926956544020");
+        let giselle = message.guild.roles.get("778587393128529920");
+        let winter = message.guild.roles.get("778587522883256341");
+        let ningning = message.guild.roles.get("778587286538289162");
+
+        if (args.option === 'karina') return message.user.addRole(karina).catch(console.error);
         if (args.option === 'giselle') return message.reply('charmander');
         if (args.option === 'winter') return message.reply('squirtle');
         if (args.option === 'ningning') return message.reply('pikachu');
