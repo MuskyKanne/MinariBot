@@ -24,7 +24,7 @@ class PokemonCommand extends Command {
         let winter = message.guild.roles.cache.find("778587522883256341");
         let ningning = message.guild.roles.cache.find("778587286538289162");
 
-        if (args.option === 'karina') return message.user.addRole(karina).catch(console.error);
+        if (args.option === 'karina') return message.author.addRole(karina);
         if (args.option === 'giselle') return message.reply('charmander');
         if (args.option === 'winter') return message.reply('squirtle');
         if (args.option === 'ningning') return message.reply('pikachu');
