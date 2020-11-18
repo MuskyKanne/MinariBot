@@ -25,7 +25,7 @@ class PokemonCommand extends Command {
         let ningning = message.guild.roles.cache.find("778587286538289162");
 
         if (args.option === 'karina') return message.author.roles.add(karina);
-        if (args.option === 'giselle') return message.reply('charmander');
+        if (args.option === 'giselle') return message.author.role.add(karina);
         if (args.option === 'winter') return message.reply('squirtle');
         if (args.option === 'ningning') return message.reply('pikachu');
     }
