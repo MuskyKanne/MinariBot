@@ -19,7 +19,7 @@ class PokemonCommand extends Command {
     }
 
     exec(message, args) {
-        let karina = message.guild.roles.cache.find("778586926956544020");
+        let karina = message.guild.roles.cache.find(role => role.name === '「 Karina 」');
         let giselle = message.guild.roles.cache.find("778587393128529920");
         let winter = message.guild.roles.cache.find("778587522883256341");
         let ningning = message.guild.roles.cache.find("778587286538289162");
